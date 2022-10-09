@@ -1,5 +1,16 @@
 # so_long_resources
 
+use functions from mlx library
+
+can use images from online or make yourself but change to .cmp using online converter
+
+write functions to check that there is only one player and one exit
+
+? write function to make sure player cant go through wall.
+
+can make map of any size but only rectangle. write function to check if map is valid
+
+use structure
 Handling errors in c:
 As such, C programming does not provide direct support for error handling but being a system programming language, it provides you access at lower level in the form of return values. Most of the C or even Unix function calls return -1 or NULL in case of any error and set an error code errno. It is set as a global variable and indicates an error occurred during any function call. You can find various error codes defined in <error.h> header file.
 
