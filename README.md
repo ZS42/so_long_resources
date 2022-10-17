@@ -108,6 +108,45 @@ main() {
 
    exit(EXIT_SUCCESS);
 }
+
+// int main()
+// {
+//     int x;
+
+//     puts("System error messages:");
+//     for( x=1; x<sys_nerr; x++ )
+//         printf("%3d: %s\n",x,strerror(x));
+//     return(0);
+// }
+
+// #include <stdio.h>
+// #include <errno.h>
+// int main()
+// {
+//     //1
+//     perror("error found");
+//     printf("errno = %d\n", errno);
+//     FILE *f;
+//     //2
+//     if ((f = fopen("file.txt", "r")) == NULL)
+//     {
+//         //3
+//         perror("Error opening the file");
+//         printf("errno = %d\n", errno);
+//     }
+//     //4
+//     perror("error found");
+//     printf("errno = %d\n", errno);
+// }
+
+// zsyyida@lab3r1s8 sources % cd error.f
+// cd: no such file or directory: error.f
+// zsyyida@lab3r1s8 sources % echo $?
+// 1
+// zsyyida@lab3r1s8 sources % cf error.c
+// zsh: command not found: cf
+// zsyyida@lab3r1s8 sources % echo $?
+// 127
 When the above code is compiled and executed, it produces the following result −
 
 Value of quotient : 4
